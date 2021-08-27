@@ -12,15 +12,15 @@
         <form action="datos/datos.html" method="POST">
         <br>
         <label for="dni">DNI</label>
-        <input type="text" name="dni" id="dni" required>
+        <input type="text" name="dni" id="dni" required  pattern="[0-9]{7,}" autocomplete="off" placeholder="XXXXXXXX">
         <br><br>
         <label for="usuario">Usuario</label>
-        <input type="text" name="usuario" id="usuario" required> 
+        <input type="text" name="usuario" id="usuario" required  pattern="^[a-z0-9_-]{3,16}$" autocomplete="off" placeholder="Ingrese usuario"> 
         <br><br>
         <label for="clave">Clave</label>
-        <input type="password" required> 
+        <input type="password" required placeholder="Ingrese contraseña"> 
         <br><br>
-        <input type="button" value="INGRESAR">
+        <input type="submit" value="INGRESAR">
 
     </form>
     </div>
